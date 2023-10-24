@@ -24,13 +24,13 @@ const App = () => {
 
       const temp_c = response.data.current.temp_c;
       if (temp_c > 30) {
-        setBackgroundImage("https://th.bing.com/th/id/OIP.CHERShM4lTgwMZYHtFTHcwHaEo?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+        setBackgroundImage("https://cdn.pixabay.com/photo/2017/06/23/17/46/desert-2435404_1280.jpg");
       } else if (temp_c < 0) {
-        setBackgroundImage("https://th.bing.com/th/id/OIP.MDrDzyd5qgxDB4oZxVbAawHaEo?w=259&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+        setBackgroundImage("https://cdn.pixabay.com/photo/2016/04/20/19/47/wolves-1341881_640.jpg");
       } else if (temp_c < 20) {
-        setBackgroundImage("https://th.bing.com/th/id/OIP.ikifeMbplcI45igtd1Jy1wHaEK?w=311&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+        setBackgroundImage("https://cdn.pixabay.com/photo/2016/05/05/02/35/sky-1373167_640.jpg");
       } else {
-        setBackgroundImage("https://th.bing.com/th/id/OIP.AAns4j-7B6ZFf51G1WAmPwHaEc?w=252&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+        setBackgroundImage("https://media.istockphoto.com/id/162428248/photo/cloudscape.webp?b=1&s=612x612&w=0&k=20&c=-3Do2vIEXPme-kRK_qe3GmnlyPtCE1y6d2zNunKpSiY=");
       }
     } catch (error) {
       console.error("Error fetching weather data: ", error);
